@@ -1,0 +1,23 @@
+body { 
+    /* background: url("../images/background/jackie_robinson_montreal10.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: top; */
+    /*font-size: xx-large; 
+    opacity: 0.6; */
+
+    position: relative;
+    z-index:1;
+    overflow:hidden; 
+  }
+
+body:before{
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url("../images/background/jackie_robinson_montreal10.jpg");
+    opacity:0.4;
+}
