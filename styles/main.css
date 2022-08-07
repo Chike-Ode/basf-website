@@ -10,20 +10,27 @@ body {
     flex-direction: column;
     /* background-color: rgb(17, 0, 0); */
     /* background-color: rgb(0, 0, 0); */
-    background-color: rgb(255, 255, 255); 
+    /* background-color: rgb(255, 255, 255);  */
     /* justify-content: space-around; */
     padding: 0;
     margin: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98) ), url(../images/background/jackie_robinson_montreal.jpg) no-repeat center center fixed; 
+    background: linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.89) ), url(../images/background/book-dark-page-open.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: -100px 80px; */
 }
 
 nav {
   /* position: fixed; */
   /* background-color: grey; */
-  width: 20vw;
+  /* width: 20vw; */
   height: 100vh;
    /* top: 12vh;  */
   right:0px; 
-  opacity:85%;
+  /* opacity:85%; */
   
   letter-spacing: 2px;
   /* margin: 50px 30px; */
@@ -31,7 +38,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: absolute;
-  justify-content: space-around;
+  justify-content: center;
   background-color: rgb(0, 0, 0);
   
 }
@@ -45,12 +52,12 @@ nav a {
   /* border-color: white; */
   
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   position: relative;
   color: rgb(255,255,255);
   text-decoration: none;
-  padding: 1px 0px; 
+  padding: 15px 20px; 
   margin: 0 30px;
   font-size: 21px;
   font-weight: bold;
@@ -72,7 +79,7 @@ p{
 
 
 img{
-  width: 40%; 
+  width: 100%; 
   /* max-height: 20vh; */
 }
 
@@ -125,18 +132,24 @@ img{
   font-weight: bold;
   border: #fff;
   color: rgb(255, 255, 255);
+  cursor:pointer;
+  margin: 0 5px;
 }
 
 .donate-btn{
-  background-color: rgb(0, 0, 51);
+  background-color: rgb(0, 0, 0,0.2);
+  /* background: #111;; */
+  border: 2px solid;
+  border-color: #8e7949cf;
+  /* opacity: 30%; */
 }
 
 .apply-btn{
-  background-color: rgb(117, 117, 117);
+  background-color: #8e7949cf;
 }
 
 .hover {
-  --c: #9c7721cf; /* the color */
+  --c: #8e7949cf; /* the color */
   
   color: #0000;
   background: 
@@ -150,6 +163,24 @@ img{
   --_p: 100%
 }
 
+.landing-container{
+  display: flex;
+  height: 40vh;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+button:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
 /* CSS */
 /* .btn {
   appearance: button;
